@@ -6,3 +6,27 @@ h1 {
 h3 {
     color: blueviolet;
 }
+
+.image2 {
+border:2px solid rgb(47, 113, 163)
+}
+
+.image1 {
+border-radius: 4px;
+}
+img {object-fit: cover;}
+a:hover {
+color: aqua;
+}
+a:active {
+color: rgb(211, 24, 24);
+}
+button {
+cursor:pointer;
+padding: 8px;
+background-color: rgb(10, 131, 131); 
+color:white;
+}
+button:hover {
+    background-color: rgba(10, 27, 216, 0.838);
+}
