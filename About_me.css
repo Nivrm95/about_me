@@ -1,10 +1,47 @@
 h1 {
-    color: aquamarine;
-    font-family: 'Rubik Vinyl', cursive;
-    font-family: 'Unbounded', cursive;
+color: aquamarine;
+font-family: 'Rubik Vinyl', cursive;
+font-family: 'Unbounded', cursive;
 }
+
+header{
+background-color:rgb(25, 175, 195);
+position: sticky;
+left: 0px;
+right: 0px;
+}
+
+.tab1{
+display:inline-block;
+margin: 20px;
+border: 1px;
+border-style: solid;
+border-color: rgba(0, 0, 0, 0.895);
+margin-left: 50px;
+}
+
+.tab2{
+display:inline-block;
+margin: 20px;
+border: 1px;
+border-style: solid;
+border-color: rgba(0, 0, 0, 0.895);
+position: absolute;
+left: 700px;
+}
+
+.tab3{
+display:inline-block;
+margin: 20px;
+border: 1px;
+border-style: solid;
+border-color: rgba(0, 0, 0, 0.895);
+position: absolute;
+left: 800px;
+}
+
 h3 {
-    color: blueviolet;
+color: blueviolet;
 }
 
 .image2 {
@@ -14,19 +51,45 @@ border:2px solid rgb(47, 113, 163)
 .image1 {
 border-radius: 4px;
 }
-img {object-fit: cover;}
+
+img {
+object-fit: cover;
+}
+
 a:hover {
 color: aqua;
 }
+
 a:active {
 color: rgb(211, 24, 24);
 }
+
 button {
 cursor:pointer;
 padding: 8px;
 background-color: rgb(10, 131, 131); 
 color:white;
 }
+
 button:hover {
-    background-color: rgba(10, 27, 216, 0.838);
+background-color: rgba(10, 27, 216, 0.838);
+}
+footer {
+background-color:rgb(140, 133, 221);
+position: fixed;
+bottom:0px;
+left: 0px;
+right: 0px;
+height: 50px;
+}
+.name{
+display:inline-block;
+margin: 20px;
+}
+.date{
+display:inline-block;
+margin: 10px;
+position: absolute;
+left: 850px;
+top: 5px;
 }
