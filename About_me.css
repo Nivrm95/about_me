@@ -1,3 +1,8 @@
+.container{
+margin: auto;
+margin-left: 50px;
+}
+
 h1 {
 color: aquamarine;
 font-family: 'Rubik Vinyl', cursive;
@@ -11,6 +16,16 @@ left: 0px;
 right: 0px;
 }
 
+.song{
+color: rgba(14, 1, 19, 0.399);
+border: 3px solid rgb(94, 184, 206);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: rgb(201, 206, 213);
+width: 500px;
+height:100px;
+overflow: auto;
+}
+
 .tab1{
 display:inline-block;
 margin: 20px;
@@ -18,6 +33,7 @@ border: 1px;
 border-style: solid;
 border-color: rgba(0, 0, 0, 0.895);
 margin-left: 50px;
+left: 0px;
 }
 
 .tab2{
@@ -27,7 +43,7 @@ border: 1px;
 border-style: solid;
 border-color: rgba(0, 0, 0, 0.895);
 position: absolute;
-left: 700px;
+left: 75%;
 }
 
 .tab3{
@@ -44,17 +60,18 @@ h3 {
 color: blueviolet;
 }
 
-.image2 {
-border:2px solid rgb(47, 113, 163)
-}
-
 .image1 {
-border-radius: 4px;
+border: 4px dashed rgb(17, 0, 255) ;
+border-radius: 20%;
 }
 
-img {
-object-fit: cover;
+.image2 {
+border:2px solid rgb(47, 113, 163) 
 }
+ .image3{
+ border-radius: 50%;
+ }
+
 
 a:hover {
 color: aqua;
@@ -90,6 +107,6 @@ margin: 20px;
 display:inline-block;
 margin: 10px;
 position: absolute;
-left: 850px;
+right: 0px;
 top: 5px;
 }
