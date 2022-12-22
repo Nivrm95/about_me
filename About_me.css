@@ -26,6 +26,7 @@ height:100px;
 overflow: auto;
 }
 
+/* a bit about me */
 .tab1{
 display:inline-block;
 margin: 20px;
@@ -36,6 +37,7 @@ margin-left: 50px;
 left: 0px;
 }
 
+/*place i love */
 .tab2{
 display:inline-block;
 margin: 20px;
@@ -46,6 +48,7 @@ position: absolute;
 left: 75%;
 }
 
+/*contact me */
 .tab3{
 display:inline-block;
 margin: 20px;
@@ -53,7 +56,7 @@ border: 1px;
 border-style: solid;
 border-color: rgba(0, 0, 0, 0.895);
 position: absolute;
-left: 800px;
+left: 85%;
 }
 
 h3 {
@@ -61,7 +64,7 @@ color: blueviolet;
 }
 
 .image1 {
-border: 4px dashed rgb(17, 0, 255) ;
+border: 4px dashed   rgb(17, 0, 255) ;
 border-radius: 20%;
 }
 
@@ -110,3 +113,18 @@ position: absolute;
 right: 0px;
 top: 5px;
 }
+/*dark mood */
+.tabDwon1{
+    display:inline-block;
+    margin: 20px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.895);
+    position: absolute;
+    left: 40%;
+    bottom:-10px
+    }
+.darkMood{
+    background-color: black;
+    color: white;
+    }

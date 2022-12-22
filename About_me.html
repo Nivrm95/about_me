@@ -10,9 +10,11 @@
 <body>
 <div>
   <header>
-   <div class="tab1">A Bit About Me</div> 
-    <div class="tab2" id="PlacesIIove" onclick="delayHandleClick()" > Places I love</div>
-   <div class="tab3" id="ContactMe" onclick="delayHandleClick()"> Contact Me</div>
+   <button class="tab1">A Bit About Me</button> 
+   <button class="tab2" id="PlacesIIove" onclick="delayHandleClick(this.id)">Places I love </button>  
+   <button class="tab3" id="ContactMe" onclick="delayHandleClick(this.id)"> Contact Me</button>
+   
+
   </header>
 </div>
 <div class="container">
@@ -97,6 +99,7 @@
   <div><footer>
     <div class="name">Niv Rahamim</div>
     <div class="date">15/12/22</div>
+    <button class="tabDwon1" id="Dark" onclick="dark()" value="off"> Dark Mood</button>
   </footer></div>
   <script src="main.js">
   </script>
