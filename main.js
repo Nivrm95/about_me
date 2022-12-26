@@ -21,3 +21,16 @@ if (flag == 'off'){
   document.getElementById('Dark').value = 'off' 
 }
 }
+
+
+
+
+const foods = ["Red Kobe", "hamburger and french fries", "Fried Schnitzel"];
+let makeList = `<ul>`;
+for (let index = 0; index < foods.length; index++) {
+  const element = foods[index];
+  makeList += `<li>${element}</li>`;
+}
+makeList += `</ul>`;
+document.getElementById("myFood-id").outerHTML = makeList;
+
