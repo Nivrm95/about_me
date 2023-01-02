@@ -34,3 +34,29 @@ for (let index = 0; index < foods.length; index++) {
 makeList += `</ul>`;
 document.getElementById("myFood-id").outerHTML = makeList;
 
+const imgArr = [
+  {
+    img:'assets/dog.jpeg',
+    description:'my dog',
+    class: 'image1'
+  },
+  {
+    img:'assets/italy.jpeg',
+    description:'italy'
+  },
+  {
+    img:'assets/diving.jpeg',
+    description:'diving'
+  }
+]
+function picList(arr) {
+  let makeList = ``;
+  for (let i = 0; i < arr.length; i++) {
+    makeList += `<div>`
+    makeList += `<img src='${arr[i].img}'><p>${arr[i].description}</p>`;
+    makeList += `</div>`
+  }
+  console.log(makeList);
+   return makeList;
+}
+document.getElementById('picList').innerHTML = renderImegList(imgArr);
