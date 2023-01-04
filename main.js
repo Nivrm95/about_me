@@ -34,29 +34,19 @@ for (let index = 0; index < foods.length; index++) {
 makeList += `</ul>`;
 document.getElementById("myFood-id").outerHTML = makeList;
 
-const imgArr = [
-  {
-    img:'assets/dog.jpeg',
-    description:'my dog',
-    class: 'image1'
-  },
-  {
-    img:'assets/italy.jpeg',
-    description:'italy'
-  },
-  {
-    img:'assets/diving.jpeg',
-    description:'diving'
+
+
+const imagList = [ 
+  {img:'assets/dog.jpeg',info:'my dog',class:"image1"}, 
+  {img:'assets/italy.jpeg',info:'italy',class:"image2"},  
+  {img:'assets/diving.jpeg',info:'diving',class:"image3"}]
+
+function createGallert(itam){
+  let makeList = '';
+
+  for(let i = 0; i<itam.length; i++){
+    makeList += `<div class= "img-container"><img src=${itam[i].img} class=${itam[i].class}></img><p>${itam[i].info}</p></div>`
   }
-]
-function picList(arr) {
-  let makeList = ``;
-  for (let i = 0; i < arr.length; i++) {
-    makeList += `<div>`
-    makeList += `<img src='${arr[i].img}'><p>${arr[i].description}</p>`;
-    makeList += `</div>`
-  }
-  console.log(makeList);
-   return makeList;
+  return makeList;
 }
-document.getElementById('picList').innerHTML = renderImegList(imgArr);
+document.getElementById('picList').innerHTML = createGallert(imagList);
