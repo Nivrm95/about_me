@@ -1,11 +1,15 @@
 
-.container{
-margin: 20px;
-margin-left: 200px;
-margin-right: 200px;
-background-color: rgba(101, 204, 204, 0.21);
-}
 
+.container{
+
+background-color: rgba(101, 204, 204, 0.21);
+padding: 50px;
+}
+main{
+    margin: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
 h1 {
 color: aquamarine;
 font-family: 'Rubik Vinyl', cursive;
@@ -32,7 +36,6 @@ header{
     justify-content: space-evenly;
     align-items: center;
 }
-} 
 
 .song{
 color: rgba(14, 1, 19, 0.399);
@@ -81,26 +84,68 @@ h3 {
 color: blueviolet;
 }
 
-.image1 {
-display:inline-block;
-border: 4px dashed   rgb(17, 0, 255) ;
-border-radius: 20%;
-width:200px;
-height:auto;
+.pic{
+    display: grid;
 }
 
+.img-container{
+    display: grid;
+}
+
+#picList{
+	display: grid;
+	grid-template-columns: repeat(8, 100px);
+	grid-template-rows: repeat(3, 100px);
+	gap: 5px;
+}
+
+.image1 {
+    display: grid;
+    height: 200px;
+	width: 200px;
+	grid-column: 1;
+	grid-row: 1;
+}
+
+
 .image2 {
-display:inline-block;
-border:2px solid rgb(47, 113, 163);
-width: 200px;
-height:auto;
+    display: grid;
+    height: 100px;
+	width: 100px;
+	grid-area:3/2;;
+
 }
+
 .image3{
-display:inline-block;
-border-radius: 50%;
-width:200px;
-height:auto;
+    display: grid;
+    width: 150px;
+	height: 100px;
+	grid-row: 1/4;
 }
+
+.image4 {
+    display: grid;
+    height: 205px;
+	width: 256px;
+	grid-area: 2/3;
+	
+}
+
+.image5 {
+    display: grid;
+    height: 100px;
+	width: 100px;
+	grid-area: 1/3;
+   
+}
+
+.image6{
+    display: grid;
+    height: 100px;
+	width: 100px;
+	grid-area: 3;
+}
+
 
 
 a:hover {
@@ -155,9 +200,63 @@ bottom:-10px
 background-color: black;
 color: white;
 }
-.img-container{
-flex-direction:column;
-margin: 15px;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
+/* tablet */
+@media screen and (min-width: 391px) and (max-width: 768px){
+    .main{
+    padding: 20;
+    width: 100%;
+    }  
+    
+    .song{
+    width: 200px;
+    padding: 20px;
+    }
+    .tabs{
+        gap: 5px;
+        margin-left: 200px;
+    }
+   .tab1{
+    margin-left: 10px;
+   }
+   .tab2{
+    left: 40%;
+   }
+   .tab3{
+    left: 70%;
+   }
+
+   #picList{
+    display: flex;
+    flex-direction: column;
+   }
+}
+@media screen and (max-width: 390px){
+    .main{
+    padding: 20;
+    width: 100%;
+    }  
+    
+    .song{
+    width: 200px;
+    padding: 20px;
+    }
+    .tabs{
+        gap: 5px;
+        margin-left: 200px;
+    }
+   .tab1{
+    margin-left: 10px;
+   }
+   .tab2{
+    left: 40%;
+   }
+   .tab3{
+    left: 70%;
+   }
+
+   #picList{
+    display: flex;
+    flex-direction: column;
+   }
+}

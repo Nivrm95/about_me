@@ -39,13 +39,17 @@ document.getElementById("myFood-id").outerHTML = makeList;
 const imagList = [ 
   {img:'assets/dog.jpeg',info:'my dog',class:"image1"}, 
   {img:'assets/italy.jpeg',info:'italy',class:"image2"},  
-  {img:'assets/diving.jpeg',info:'diving',class:"image3"}]
+  {img:'assets/diving.jpeg',info:'diving',class:"image3"},
+  {img:'assets/bike.jpeg',info:'bike',class:"image4"}, 
+  {img:'assets/train.jpeg',info:'train',class:"image5"},  
+  {img:'assets/car.jpeg',info:'car',class:"image6"},
+]
 
 function createGallert(itam){
   let makeList = '';
 
   for(let i = 0; i<itam.length; i++){
-    makeList += `<div class= "img-container"><img src=${itam[i].img} class=${itam[i].class}></img><p>${itam[i].info}</p></div>`
+    makeList += `<img src=${itam[i].img} class=${itam[i].class}></img></div>`
   }
   return makeList;
 }
